@@ -1,15 +1,37 @@
+<script>
+export default {
+  name: "App",
+  components: {},
+};
+</script>
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <main class="main-wrapper">
+    <h1 class="page-title">ToDo MCV</h1>
+    <p class="subtitle">A todo app powered by Vue 3 + Vite</p>
+    <input type="text" />
+    <button>Add</button>
+  </main>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+<style>
+html {
+  background-color: #4650dd;
 }
-</script>
+.main-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.page-title {
+  font-size: 44px;
+  letter-spacing: 1.8.px;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-top: 104px;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+}
+</style>
